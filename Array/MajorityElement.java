@@ -1,11 +1,10 @@
 public class MajorityElement{
     public static int Bruetforce(int arr[])
     {
-        
-        for(int i=0;i<arr.length;i++)
+      for(int i=0;i<arr.length;i++)
         {
             int count=0; //reset for every new i element
-            for(int j=i;j<arr.length;j++){
+            for(int j=i;j<arr.length;j++){//count itself also
                 if(arr[i]==arr[j]){
                     count++;
                 }
@@ -17,6 +16,8 @@ public class MajorityElement{
         }
         return -1;
     }
+
+
 
     public static void main(String args[]){
         int arr[]={1,2,1,4,4,4,4};
