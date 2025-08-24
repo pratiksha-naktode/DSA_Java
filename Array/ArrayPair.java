@@ -14,9 +14,10 @@ public class ArrayPair{
 // find Sum of Pair equal to target and return that pairs
 public static void PairSum(int arr[],int target){//BRUET FORCE METHOD O(N)^3
     boolean found=false;
-      for(int i=0;i<arr.length;i++){
-        int sum=0;
+         for(int i=0;i<arr.length;i++){
+           int sum=0;
             for(int j=i+1;j<arr.length;j++){
+                
                 sum=arr[i]+arr[j];
             if(sum==target){ //(arr[i]+arr[j])
                 found=true;
