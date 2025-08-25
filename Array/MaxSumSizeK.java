@@ -4,7 +4,7 @@
 public class MaxSumSizeK{
 
     public static void main(String[] args) {
-        int arr[]={1,3,7,2,11,13};
+        int arr[]={-1,3,7,2,11,13};
         int k=3;
         int maxsum=0;
         for(int i=0;i<k;i++){
@@ -14,12 +14,12 @@ public class MaxSumSizeK{
 
         for(int i=k;i<arr.length;i++){
             currentsum=currentsum-arr[i-k]+arr[i];
-            if(maxsum<currentsum){
+            if(maxsum<currentsum){ //for -minimum minsum>currentsum
                 maxsum=currentsum;
             }
         }
 
-        System.out.println(maxsum);
+        System.out.println("maximum subaarray sum"+maxsum);
        //  System.out.println(maxsum);
 
     }
